@@ -23,14 +23,9 @@ html, body {
   color: #000;
 }
 
-/*
- * Globals
- */
-
-/*
- * Base structure
- */
-
+.col-lg-4 {
+  padding-top: 35px;
+}
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
@@ -143,4 +138,19 @@ html, body {
 }
 .form-signin input[type="password"] {
   margin-bottom: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
 }
