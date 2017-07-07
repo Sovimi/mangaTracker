@@ -1,20 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bookshelf>
-	<manga>
-		<title> </title>
-		<romamji> </romamji>
-		<native> </native>
-		<year> </year>
-		<author> </author>
-		<status> </status>
-		<score> </score>
-		<genres>
-			<genre> </genre>
-			<genre> </genre>
-		</genres>
-		<tags>
-			<tag> </tag>
-			<tag> </tag>
-		</tags>
-	</manga>
-</bookshelf>
+
+<BOOKSHELF>
+	<MANGA>
+		<TITLE>Berserk</TITLE>
+		<ROMANJI>Berserk</ROMANJI>
+		<NATIVE>ベルセルク</NATIVE>
+		<DESCRIPTION>Guts, known as the Black Swordsman, seeks sanctuary from the demonic forces that pursue him and his woman, and also vengeance against the man who branded him as an unholy sacrifice. Aided only by his titanic strength, skill, and sword, Guts must struggle against his bleak destiny, all the while fighting with a rage that might strip him of his humanity. Berserk is a dark and brooding story of outrageous swordplay and ominous fate, in the theme of Shakespeare's Macbeth.</DESCRIPTION>
+		<YEAR>1989</YEAR>
+		<AUTHOR>Kentaro Miura</AUTHOR>
+		<STATUS>Publishing</STATUS>
+		<TYPE>MANGA</TYPE>
+		<SCORE>89%</SCORE>
+		<GENRES>
+			<GENRE>Action</GENRE>
+			<GENRE>Adventure</GENRE>
+			<GENRE>Drama</GENRE>
+			<GENRE>Fantasy</GENRE>
+			<GENRE>Horror</GENRE>
+		</GENRES>
+		<TAGS>
+			<TAG>Demons</TAG>
+			<TAG>Gore</TAG>
+			<TAG>Military</TAG>
+			<TAG>Revenge</TAG>
+			<TAG>Tragedy</TAG>
+		</TAGS>
+		<IMG-URL>resources/covers/berserk.jpg</IMG-URL>
+		<PAGE-URL>MANGA/berserk.html</PAGE-URL>
+	</MANGA>
+</BOOKSHELF>

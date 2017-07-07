@@ -64,36 +64,35 @@ function saveUser(){
 }
 
 function loadJSON(jsonFile) {
+    http_request = false;
         
-        http_request = false;
+    if (window.XMLHttpRequest) { // Mozilla, Safari,...
+        http_request = new window.XMLHttpRequest();         
         
-        if (window.XMLHttpRequest) { // Mozilla, Safari,...
-            http_request = new window.XMLHttpRequest();         
-            
-        } else if (window.ActiveXObject) { // IE
+    } else if (window.ActiveXObject) { // IE
+        try {
+            http_request = new ActiveXObject("Microsoft.XMLHTTP");
+        } catch (e) {
             try {
                 http_request = new ActiveXObject("Microsoft.XMLHTTP");
-            } catch (e) {
-                try {
-                    http_request = new ActiveXObject("Microsoft.XMLHTTP");
-                } catch (e) {}
-            }
+            } catch (e) {}
         }
+    }
 
-        if (!http_request) {
-            alert('Giving up :( Cannot create an XMLHTTP instance');
-            return false;
-        }
+    if (!http_request) {
+        alert('Giving up :( Cannot create an XMLHTTP instance');
+        return false;
+    }
         
-        http_request.open("GET", jsonFile, false);
+    http_request.open("GET", jsonFile, true);
         
-        http_request.send("");
-        //return http_request.responseXML;
-        return http_request.responseText;
+    http_request.send("");
+    //return http_request.responseXML;
+    return http_request.responseText;
 }
 
 function loadXML(xmlFile) {
- http_request = false;
+    http_request = false;
         
         if (window.XMLHttpRequest) { // Mozilla, Safari,...
             http_request = new window.XMLHttpRequest();         
@@ -113,23 +112,35 @@ function loadXML(xmlFile) {
             return false;
         }
         
-        http_request.open("GET", xmlFile, false);
+        http_request.open("GET",xmlFile,false);
         
         http_request.send("");
         return http_request.responseXML;
 }
 
-function myFunction(xml) {
+function getSearchResults() {
   var x, i, xmlDoc, table;
   xmlDoc = loadXML("manga.xml");
-  table = "<tr><th>Artist</th><th>Title</th></tr>";
-  x = xmlDoc.getElementsByTagName("CD");
-  for (i = 0; i < x.length; i++) { 
-    table += "<tr><td>" + 
-    x[i].getElementsByTagName("Artist")[0].childNodes[0].nodeValue +
-    "</td><td>" +
-    x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
-    "</td></tr>";
+  table = "";
+  x = xmlDoc.getElementsByTagName("MANGA");
+  for (var j = 0; j<x.length; j++) {
+      table += "<div class='row'>";
+       for (i = 0; i < 6 || i<x.length; i++, j++) { 
+        table += "<div class='col-sm-2'><div class='cover-card'></div><a href='" + 
+        x[i].getElementsByTagName("PAGE-URL")[0].childNodes[0].childNodes[0].nodeValue +
+        "'<img src='" + 
+        x[i].getElementsByTagName("IMG-URL")[0].childNodes[0].childNodes[0].nodeValue +
+        "' alt=''>></a><div class='cover-data'><a href='"+
+        x[i].getElementsByTagName("PAGE-URL")[0].childNodes[0].childNodes[0].nodeValue +
+        "'>"+
+        x[i].getElementsByTagName("TITLE")[0].childNodes[0].childNodes[0].nodeValue +
+        "</a></div><span><div title='type' class='manga-info-type'>"+
+        x[i].getElementsByTagName("TYPE")[0].childNodes[0].childNodes[0].nodeValue +
+        "</div><div title='average score' class='manga-info-score'>"+
+        x[i].getElementsByTagName("SCORE")[0].childNodes[0].childNodes[0].nodeValue +
+        "</div></span></div>";
+      }
   }
-  document.getElementById("demo").innerHTML = table;
+  document.getElementById("search-results-div").innerHTML = table;
+  console.log(table);
 }
