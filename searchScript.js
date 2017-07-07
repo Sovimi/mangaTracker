@@ -40,15 +40,15 @@ var xml_tree;
             table += "<div class='col-sm-2'><div class='cover-card'></div><a href='" + 
             x[i].getElementsByTagName("PAGE-URL")[0].childNodes[0].childNodes[0] +
             "'<img src='" + 
-            x[i].getElementsByTagName("IMG-URL")[0].childNodes[0].childNodes[0].nodeValue +
+            x[i].getElementsByTagName("IMG-URL")[0].childNodes[0].childNodes[0] +
             "' alt=''>></a><div class='cover-data'><a href='"+
-            x[i].getElementsByTagName("PAGE-URL")[0].childNodes[0].childNodes[0].nodeValue +
+            x[i].getElementsByTagName("PAGE-URL")[0].childNodes[0].childNodes[0]+
             "'>"+
-            x[i].getElementsByTagName("TITLE")[0].childNodes[0].childNodes[0].nodeValue +
+            x[i].getElementsByTagName("TITLE")[0].childNodes[0].childNodes[0] +
             "</a></div><span><div title='type' class='manga-info-type'>"+
-            x[i].getElementsByTagName("TYPE")[0].childNodes[0].childNodes[0].nodeValue +
+            x[i].getElementsByTagName("TYPE")[0].childNodes[0].childNodes[0] +
             "</div><div title='average score' class='manga-info-score'>"+
-            x[i].getElementsByTagName("SCORE")[0].childNodes[0].childNodes[0].nodeValue +
+            x[i].getElementsByTagName("SCORE")[0].childNodes[0].childNodes[0]+
             "</div></span></div>";
           }
       }
