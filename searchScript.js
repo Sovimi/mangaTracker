@@ -38,7 +38,7 @@ var xml_tree;
           table += "<div class='row'>";
            for (i = 0; i < 6 || i<x.length; i++, j++) { 
             table += "<div class='col-sm-2'><div class='cover-card'></div><a href='" + 
-            x[i].getElementsByTagName("PAGE-URL")[0].childNodes[0].childNodes[0].nodeValue +
+            x[i].getElementsByTagName("PAGE-URL")[0].childNodes[0].childNodes[0] +
             "'<img src='" + 
             x[i].getElementsByTagName("IMG-URL")[0].childNodes[0].childNodes[0].nodeValue +
             "' alt=''>></a><div class='cover-data'><a href='"+
