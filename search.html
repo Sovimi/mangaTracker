@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="resources/bootstrap-3.3.7-dist/css/bootstrap.css">
 	<!-- Optional theme -->
 	<link rel="stylesheet" type="text/css" href="resources/bootstrap-3.3.7-dist/css/bootstrap-theme.css">
-	<!-- Latest compiled and minified JavaScript -->
+	<!-- Latest JavaScript -->
 	<script type="text/javascript" src="resources/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
 	<!-- Costume CSS -->
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -22,10 +22,63 @@
 						    <li><a href="singup.html">Register</a></li>
 						    <li class="active"><a href="search.html">Search</a></li>
 						    <li><a href="forum.html">Forum</a></li>
-						    </ul>
+						    </ul>	
 			        	</nav>
 				</div>
+	<div class="search-header-div"></div>
+		<form id="search-form" action="search_submit" method="get" accept-charset="utf-8">
+			<input type="text" placeholder="Search manga">
+		</form>
+	<div id="search-content-div">
+		<div id="search-bar-div">
+			<h1>Browse Manga</h1>
+			<div id="search-year-div">
+			Year
+				<ul class="browse-dropdown">
+					<li></li>
+				</ul>
+			</div>
+			<div id="search-status-div">
+			Status
+				<ul class="browse-dropdown">
+					<li></li>
+				</ul>
+			</div>
+			<div id="search-type-div">
+			Type
+				<ul class="browse-dropdown">
+					<li></li>
+				</ul>
+			</div>
+			<div id="search-sort-div">
+			Sort
+				<ul class="browse-dropdown">
+					<li></li>
+				</ul>
+			</div>
+			<div id="search-genres-div">
+				<!-- ADD BUTONS? (GENRES AND TAGS) -->
+			</div>
+			<ul id="search-tags"></ul>
+				<!-- ADD SECTIONS -->
+			<ul id="search-genres">
+				<!-- ADD LI here -->
+			</ul>
+		</div>	
+		<div id="search-results-div">
+			<div class="cover-card">
+			<a href=""></a> <!--IMG COVER HERE -->
+				<div class="cover-data">
+					<a href="" title="">Name</a> <!-- manga name and link -->
+				</div>
+				<span>
+					<div title="type" id="manga-info-type"></div>
+					<div title="average score" id="manga-info-score"></div>
+				</span>
+			</div>
+		</div>
+	</div>
 
-	<footer class="footer"><br>CopyRight:ソフィア・サン</br></footer>
+	<footer class="footer"><br>CopyRight:ソフィア・サン<br></footer>
 </body>
 </html>
