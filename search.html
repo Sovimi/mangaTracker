@@ -2,8 +2,8 @@
 <html>
 <head>
 	<title>Search</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<!-- Add icon library -->
-	<script src="https://use.fontawesome.com/bcb80fddb3.js"></script>
 	<!-- bootstrap CSS -->
 	<link rel="stylesheet" type="text/css" href="resources/bootstrap-3.3.7-dist/css/bootstrap.css">
 	<!-- Optional theme -->
@@ -28,36 +28,51 @@
 		</nav>
 	</div>
 	<div class="search-header-div">
-		<form id="search-form" action="search_submit" method="get" accept-charset="utf-8">
-			<input type="text" placeholder="Search manga">
-		</form>
+		
+		<input id="search-input" class="form-control" type="text" placeholder="Search manga..." onkeyup="search(this)">
 	</div>
-	<div id="search-content-div">
-		<div id="search-bar-div">
-			<h1>Browse Manga</h1>
-			<div id="search-year-div">
-			Year
-				<ul class="browse-dropdown">
-					<li></li>
-				</ul>
+	<div class="search-content-div">
+		<div class="search-bar-div">
+			<div class="search-year-div">
+				<div class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" year>Year </a>
+					<ul class="dropdown-menu" role="menu">
+						<li onclick="getSelectedResults()">none</li>
+						<li onclick="getSelectedResults('1989',null,null,null)">1989</li>
+						<li>2016</li>
+						<li>2015</li>
+						<li>2014</li>
+						<li>2013</li>
+					</ul>
+				</div>
 			</div>
-			<div id="search-status-div">
-			Status
-				<ul class="browse-dropdown">
-					<li></li>
-				</ul>
+			<div class="search-year-div">
+				<div class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" year>Status </a>
+					<ul class="dropdown-menu" role="menu">
+						<li>Publishing</li>
+						<li>Scanlated</li>
+						<li>Completed</li>
+						<li>Not scanlated</li>
+						<li>Hiatus</li>
+					</ul>
+				</div>
 			</div>
-			<div id="search-type-div">
-			Type
-				<ul class="browse-dropdown">
-					<li></li>
-				</ul>
+			<div class="search-year-div">
+				<div class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" year>Type </a>
+					<ul class="dropdown-menu" role="menu">
+						<li></li>
+					</ul>
+				</div>
 			</div>
-			<div id="search-sort-div">
-			Sort
-				<ul class="browse-dropdown">
-					<li></li>
-				</ul>
+			<div class="search-year-div">
+				<div class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" year>Sort</a>
+					<ul class="dropdown-menu" role="menu">
+						<li></li>
+					</ul>
+				</div>
 			</div>
 			<div id="search-genres-div">
 				<!-- ADD BUTONS? (GENRES AND TAGS) -->
@@ -74,6 +89,6 @@
 			</script>
 		</div>
 	</div>
-	<footer class="footer"><br>CopyRight:ソフィア・サン<br></footer>	
+	<footer class="search-footer"><br>CopyRight:ソフィア・サン<br></footer>	
 </body>
 </html>
