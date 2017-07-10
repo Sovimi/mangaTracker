@@ -25,8 +25,8 @@
 			<TAG>Revenge</TAG>
 			<TAG>Tragedy</TAG>
 		</TAGS>
-		<IMGURL>resources/covers/berserk.jpg</IMGURL>
-		<PAGEURL>berserk.html</PAGEURL>
+		<IMGURL>/resources/covers/berserk.jpg</IMGURL>
+		<PAGEURL>/manga/berserk.html</PAGEURL>
 	</MANGA>
 	<MANGA>
 		<TITLE>Fullmetal Alchemist</TITLE>
@@ -52,8 +52,8 @@
 			<TAG>Revenge</TAG>
 			<TAG>Tragedy</TAG>
 		</TAGS>
-		<IMGURL>resources/covers/fullmetal.jpg</IMGURL>
-		<PAGEURL>berserk.html</PAGEURL>
+		<IMGURL>/resources/covers/fullmetal.jpg</IMGURL>
+		<PAGEURL>/manga/berserk.html</PAGEURL>
 	</MANGA>
 	<MANGA>
 		<TITLE>One Piece</TITLE>
@@ -80,6 +80,6 @@
 			<TAG>Tragedy</TAG>
 		</TAGS>
 		<IMGURL>resources/covers/onePiece.png</IMGURL>
-		<PAGEURL>berserk.html</PAGEURL>
+		<PAGEURL>/manga/berserk.html</PAGEURL>
 	</MANGA>
 </BOOKSHELF>

@@ -6,7 +6,7 @@ html, body {
   /* Margin bottom by footer height */
   margin-bottom: 50px;
   height: 95%;
-  background-image: url("resources/background.jpg");
+  background-image: url("/resources/background.jpg");
   background-position: center;
   color: #fff;
   text-align: center;
@@ -156,8 +156,7 @@ html, body {
 }
 
 
-/* Featurettes
-------------------------- */
+/*--------------SEARCH------------------*/
 
 .featurette-divider {
   margin: 80px 0; /* Space out the Bootstrap <hr> more */
@@ -300,7 +299,7 @@ border-radius: 0px;
 .search-bar-div{
 }
 
-/*------------------------------*/
+/*--------------MANGA INFO----------------*/
 
 .main-info-div{
   text-align: left;
@@ -362,6 +361,7 @@ border-radius: 0px;
 
 .info-table-div .col-md-2 {
   border: 1px solid white;
+  /*border-radius: 2px;*/
   margin-bottom: 70px;
 }
 
@@ -376,3 +376,9 @@ border-radius: 0px;
 
   margin-top: 150px;
 }
+
+/*-----------------LIST-------------------*/
+
+
+
+/*-----------------HOMEPAGE-------------------*/

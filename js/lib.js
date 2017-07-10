@@ -1,34 +1,30 @@
-var http_request = false;
-var xml_tree;
+var userData;
 var ofyear="", oftype="", ofstatus="", sortby="", input;
 
-    function loadXML(xmlFile) {
-        
-		http_request = false;
-		
-		if (window.XMLHttpRequest) { // Mozilla, Safari,...
-			http_request = new window.XMLHttpRequest();			
-            
-        } else if (window.ActiveXObject) { // IE
-            try {
-                http_request = new ActiveXObject("Microsoft.XMLHTTP");
-            } catch (e) {
-                try {
-                    http_request = new ActiveXObject("Microsoft.XMLHTTP");
-                } catch (e) {}
-            }
-        }
+/* Login */
+function authenticator() {
+    var x,y,text;
 
-        if (!http_request) {
-            alert('Giving up :( Cannot create an XMLHTTP instance');
-            return false;
+    x = document.getElementById("inputEmail").value;
+    y = document.getElementById("inputPassword").value;
+
+    userData = JSON.parse(loadJSON("/data/data.json"));
+
+    for (var i = userData.users.length - 1; i >= 0; i--) {
+
+        if (x === userData.users[i].email && y === userData.users[i].password) {
+            text = "valid user";
+            this.setCookie("user", userData.users[i].username);
+            window.location = '/home.html';
+        } else {
+            text = "Not a user";
         }
-		
-		http_request.open("GET",xmlFile,false);
-		
-		http_request.send("");
-		return http_request.responseXML;
     }
+    document.getElementById("demoTT").innerHTML = text;
+}
+
+
+/*-------------- SEARCH ------------------*/
 
 function getGridResults(x){
   table="";
@@ -69,7 +65,7 @@ function getSearchResults(newInput) {
   var x, i, xmlDoc, table;
   if (newInput == null) {input="";}
   else{this.input = newInput;}
-  xmlDoc = loadXML("manga.xml");
+  xmlDoc = loadXML("/data/manga.xml");
   x = xmlDoc.getElementsByTagName("MANGA");
 
   document.getElementById("search-results-div").innerHTML = getGridResults(x);
@@ -87,4 +83,15 @@ function search(ele) {
   if(event.keyCode == 13) { 
     getSearchResults(ele.value);  
   }
+}
+
+
+/*-------- LISTS ----------------*/
+
+function changeUserStatistics(){
+
+}
+
+function populateList(){
+
 }
