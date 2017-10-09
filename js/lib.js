@@ -2,10 +2,10 @@ var userData;
 var ofyear="", oftype="", ofstatus="", sortby="", ofgenres=[], oftags=[], input;
 var mystatus="", mychapter="", myvolume=""; 
 var authorized = isAuthorized();
-var xmlDoc = loadXML("/mangaTrackers/data/manga.xml");
-var xmlDocUser = loadXML("/mangaTrackers/data/user.xml");
+var xmlDoc = loadXML("/mangaTracker/data/manga.xml");
+var xmlDocUser = loadXML("/mangaTracker/data/user.xml");
 parser = new DOMParser();
-var xmlDocList = loadXML("/mangaTrackers/data/myMangaList.xml");
+var xmlDocList = loadXML("/mangaTracker/data/myMangaList.xml");
 
 function removeArrayDuplicates(array){
   newArray =[];
@@ -23,7 +23,7 @@ function authenticator() {
     x = document.getElementById("inputEmail").value;
     y = document.getElementById("inputPassword").value;
 
-    userData = JSON.parse(loadJSON("/mangaTrackers/data/data.json"));
+    userData = JSON.parse(loadJSON("/mangaTracker/data/data.json"));
 
     for (var i = userData.users.length - 1; i >= 0; i--) {
 
