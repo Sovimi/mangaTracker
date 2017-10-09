@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html  ng-app="myapp">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Search</title>
+	<!--Angular JS-->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<!--JQuery-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<!-- Add icon library -->
-	<!-- bootstrap CSS -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- bootstrap CSS -->	
 	<link rel="stylesheet" type="text/css" href="resources/bootstrap-3.3.7-dist/css/bootstrap.css">
 	<!-- Optional theme -->
 	<link rel="stylesheet" type="text/css" href="resources/bootstrap-3.3.7-dist/css/bootstrap-theme.css">
@@ -13,84 +19,152 @@
 	<!-- Costume CSS -->
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
 	<!-- Costume JavaScript-->
-	<script type="text/javascript" src="/js/lib.js"></script>
 	<script type="text/javascript" src="/js/lib_files.js"></script>	
-	<script type="text/javascript" src="/js/lib_cookies.js"></script>	
+	<script type="text/javascript" src="/js/lib_cookies.js"></script>
+	<script type="text/javascript" src="/js/lib.js"></script>
 </head>	
-<body>	
-    <div id="navbar" class="collapse navbar-collapse">
-		<nav>
-			<ul class="nav navbar-nav">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="login.html">Login</a></li>
-			<li><a href="singup.html">Register</a></li>
-			<li class="active"><a href="search.html">Search</a></li>
-			<li><a href="forum.html">Forum</a></li>
-			</ul>	
-		</nav>
-	</div>
-	<div class="search-header-div">
-		
-		<input id="search-input" class="form-control" type="text" placeholder="Search manga..." onkeyup="search(this)">
-	</div>
-	<div class="search-content-div">
-		<div class="search-bar-div">
-			<div class="search-year-div">
-				<div class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" year>Year </a>
-					<ul class="dropdown-menu" role="menu">
-						<li onclick="getSelectedResults()">none</li>
-						<li onclick="getSelectedResults('1989',null,null,null)">1989</li>
-						<li>2016</li>
-						<li>2015</li>
-						<li>2014</li>
-						<li>2013</li>
-					</ul>
-				</div>
+<body ng-controller="MainCtrl">
+	<div ng-if="isAuthenticated">
+		<div class="nav navbar-nav">
+		  	<a href="profile.html" title="my profile" class="avatar-nav" style="background-image: url(/resources/user.jpeg);"></a>
+		  	<div class="links-nav">
+				<a class="active" href="home.html">
+				<i class="material-icons">home</i>
+				<div><span>home</span></div>
+				</a>
+				<a href="#">
+				<i class="material-icons">person</i>
+				<div><span>profile</span></div>
+				</a>
+				<a href="mangalist.html">
+				<i class="material-icons">view_list</i>
+				<div><span>lists</span></div>
+				</a>
+				<a href="search.html">
+				<i class="material-icons">search</i>
+				<div><span>search</span></div>
+				</a>
+				<a href="#">
+				<i class="material-icons">forum</i>
+				<div><span>forum</span></div>
+				</a>
 			</div>
-			<div class="search-year-div">
-				<div class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" year>Status </a>
-					<ul class="dropdown-menu" role="menu">
-						<li>Publishing</li>
-						<li>Scanlated</li>
-						<li>Completed</li>
-						<li>Not scanlated</li>
-						<li>Hiatus</li>
-					</ul>
-				</div>
+			<div class="footer-nav">				
+				<a href="/search.html" onclick="userLogout()" class="">Logout</a>
+				<a href="#" class="nav-sml">
+	                <i class="material-icons">settings</i>
+	            </a>
+	            <a href="/search.html" class="nav-sml">
+	                <i class="material-icons">search</i>
+	            </a>
+	            <div class="logo-nav">
+	            	<img src="/resources/logo.png" alt="logo">
+	            </div>
 			</div>
-			<div class="search-year-div">
-				<div class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" year>Type </a>
-					<ul class="dropdown-menu" role="menu">
-						<li></li>
-					</ul>
-				</div>
-			</div>
-			<div class="search-year-div">
-				<div class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" year>Sort</a>
-					<ul class="dropdown-menu" role="menu">
-						<li></li>
-					</ul>
-				</div>
-			</div>
-			<div id="search-genres-div">
-				<!-- ADD BUTONS? (GENRES AND TAGS) -->
-			</div>
-			<ul id="search-tags"></ul>
-				<!-- ADD SECTIONS -->
-			<ul id="search-genres">
-				<!-- ADD LI here -->
-			</ul>
-		</div>	
-		<div id="search-results-div" class="container-fluid">
-			<script type="text/javascript">
-				getSearchResults();
-			</script>
 		</div>
 	</div>
-	<footer class="search-footer"><br>CopyRight:ソフィア・サン<br></footer>	
+	<div ng-if="!isAuthenticated">
+	    <div class="nav navbar-nav">
+		  	<div class="links-nav">
+				<a class="active" href="index.html">
+				<i class="material-icons">home</i>
+				<div><span>home</span></div>
+				</a>
+				<a href="login.html">
+				<i class="material-icons">person</i>
+				<div><span>Login</span></div>
+				</a>
+				<a href="singup.html">
+				<i class="material-icons">view_list</i>
+				<div><span>Register</span></div>
+				</a>
+				<a href="search.html">
+				<i class="material-icons">search</i>
+				<div><span>search</span></div>
+				</a>
+				<a href="#">
+				<i class="material-icons">forum</i>
+				<div><span>forum</span></div>
+				</a>
+			</div>
+			<div class="footer-nav">
+				<a href="#" class="nav-sml">
+	                <i class="material-icons">settings</i>
+	                <div><span>settings</span></div>
+	            </a>
+	            <a href="/search.html" class="nav-sml">
+	                <i class="material-icons">search</i>
+	                <div><span>search</span></div>
+	            </a>
+	            <div class="logo-nav">
+	            <img src="/resources/logo.png" alt="logo">
+	            </div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="search-header-div row">
+			<input id="search-input" class="form-control" type="text" placeholder="Search manga..." onkeyup="search(this)">
+		</div>
+		<div class="search-content-div">
+			<div class="search-bar-div row">
+				<div class="search-year-div">
+					<div class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Year </a>
+						<ul class="dropdown-menu" id="year-dropdown" role="menu">
+							<script type="text/javascript">
+								getDropdownMenu('year', 'year-dropdown');
+							</script>
+						</ul>
+					</div>
+				</div>
+				<div class="search-status-div darker">
+					<div class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Status </a>
+						<ul class="dropdown-menu" id="status-dropdown" role="menu">
+							<script type="text/javascript">
+								getDropdownMenu('status', 'status-dropdown');
+							</script>
+						</ul>
+					</div>
+				</div>
+				<div class="search-type-div">
+					<div class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Type </a>
+						<ul class="dropdown-menu" id="type-dropdown" role="menu">
+							<script type="text/javascript">
+								getDropdownMenu('type', 'type-dropdown');
+							</script>
+						</ul>
+					</div>
+				</div>
+				<div class="search-sort-div darker">
+					<div class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Sort</a>
+						<ul class="dropdown-menu" role="menu">
+							<li>Name</li>
+							<li>Score</li>
+						</ul>
+					</div>
+				</div>
+				<div id="search-genres-div">
+					<div>
+						<span><a href="#" id="span-genres" onclick="getTagsRows('genres')">Genres</a></span>
+						<span><a href="#" id="span-tags" onclick="getTagsRows('tags')">Tags</a></span>
+					</div>
+					<ul id="genres-div-content">
+						<script type="text/javascript">
+							getTagsRows('genres');
+						</script>
+					</ul>
+				</div>
+			</div>	
+			<div id="search-results-div">
+				<script type="text/javascript">
+					getSearchResults();
+				</script>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

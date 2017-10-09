@@ -1,0 +1,9 @@
+<USER>
+	<USERNAME>admin</USERNAME>
+	<LISTS>
+		<LIST>
+			<LIST-NAME>Manga List</LIST-NAME>
+			<LIST-URL>/MyMangaList.xml</LIST-URL>
+		</LIST>
+	</LISTS>
+</USER>

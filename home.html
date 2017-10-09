@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Manga List</title>
+	<!--Angular JS-->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<!--JQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<!-- Add icon library -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="resources/bootstrap-3.3.7-dist/css/bootstrap.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" type="text/css" href="resources/bootstrap-3.3.7-dist/css/bootstrap-theme.css">
+	<!-- Latest JavaScript -->
+	<script type="text/javascript" src="resources/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+	<!-- Costume CSS -->
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<!-- Costume JavaScript-->
+	<script type="text/javascript" src="/js/lib_cookies.js"></script>
+	<script type="text/javascript" src="/js/lib_files.js"></script>	
+	<script type="text/javascript" src="/js/lib.js"></script>
+	<script type="text/javascript">
+    	checkUserLogout();
+  	</script>
+</head>
+<body>
+	<div class="nav navbar-nav">
+	  	<a href="profile.html" title="my profile" class="avatar-nav" style="background-image: url(/resources/user.jpeg);"></a>
+	  	<div class="links-nav">
+			<a class="active" href="home.html">
+			<i class="material-icons">home</i>
+			<div><span>home</span></div>
+			</a>
+			<a href="#">
+			<i class="material-icons">person</i>
+			<div><span>profile</span></div>
+			</a>
+			<a href="mangalist.html">
+			<i class="material-icons">view_list</i>
+			<div><span>lists</span></div>
+			</a>
+			<a href="search.html">
+			<i class="material-icons">search</i>
+			<div><span>search</span></div>
+			</a>
+			<a href="#">
+			<i class="material-icons">forum</i>
+			<div><span>forum</span></div>
+			</a>
+		</div>
+		<div class="footer-nav">
+			<a href="/index.html" onclick="userLogout()" class="">Logout</a>
+			<a href="#" class="nav-sml">
+                <i class="material-icons">settings</i>
+            </a>
+            <a href="/search.html" class="nav-sml">
+                <i class="material-icons">search</i>
+            </a>
+            <div class="logo-nav">
+            <img src="/resources/logo.png" alt="logo">
+            </div>
+		</div>
+	</div>
+	<div class="home-main-div container-fluid">
+			<div class="home-navbar ">
+					<a id="feed-link" class="active" href="#" title="feed" onclick="changeHomeTo('feed')">Feed</a>
+					<a id="reviews-link" href="#" title="reviews" onclick="changeHomeTo('reviews')">Reviews</a>
+					<a id="new-link" href="#" title="reviews" onclick="changeHomeTo('new')">Newest</a>
+					<a id="popular-link" href="#" title="reviews" onclick="changeHomeTo('popular')">Popular</a>
+			</div>
+			<div class="home-div row">
+				<div class="home-feed-div col-lg-6">
+					<div class="trending-div row">
+						<h4>Trending</h4>
+						<img src="/resources/covers/tokyo_ghoul.jpg" alt="trending 1">
+						<img src="/resources/covers/haikyuu.jpg" alt="trending 2">
+						<img src="/resources/covers/koe_no_katachi.jpg" alt="trending 3">
+					</div>
+					<div class="recent-div row">
+						<h4>Recent</h4>
+						<img src="/resources/covers/one_punch_man.jpg" alt="trending 1">
+						<img src="/resources/covers/great_teacher_onizuka.jpg" alt="trending 2">
+						<img src="/resources/covers/death_note.jpg" alt="trending 3">
+					</div>
+					<div class="feed-div row">
+						<h4>Feed</h4>
+					</div>
+				</div>
+				<div class="home-panel-div col-lg-6">
+					<div class="poll-div row">
+						<h4>Poll</h4>
+					</div>
+					<div class="reviews-div row">
+						<h4>Reviews</h4>
+					</div>
+				</div>
+			</div>
+	</div>
+	<footer class="footer">CopyRight:ソフィア・サン</footer>
+</body>
+</html>

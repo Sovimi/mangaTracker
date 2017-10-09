@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Index</title>
+  <!--Angular JS-->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <!--JQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<!-- Add icon library -->
-	<script src="https://use.fontawesome.com/bcb80fddb3.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://use.fontawesome.com/bcb80fddb3.js"></script>
 	<!-- bootstrap CSS -->
 	<link rel="stylesheet" type="text/css" href="resources/bootstrap-3.3.7-dist/css/bootstrap.css">
 	<!-- Optional theme -->
@@ -12,105 +19,117 @@
 	<script type="text/javascript" src="resources/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
 	<!-- Costume CSS -->
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
-  <!-- Costume JavaScript-->
-  <script type="text/javascript" src="/js/lib.js"></script>
-  <script type="text/javascript" src="/js/lib_files.js"></script> 
+  <!-- Costume JavaScript--> 
   <script type="text/javascript" src="/js/lib_cookies.js"></script> 
+  <script type="text/javascript" src="/js/lib_files.js"></script>
+  <script type="text/javascript" src="/js/lib.js"></script>
+  <script type="text/javascript">
+    checkLoggedUser();
+  </script>
 </head>	
-<body>	
-    <div class="site-wrapper">
-
-      <div class="site-wrapper-inner">
-
-        <div class="cover-container">
-
-        	<div class="inner cover">
-	            <h1 class="cover-heading text-uppercase">Baka-Updates</h1>
-	            <p class="lead">Baka-Updates Manga is a site dedicated to bringing the manga community the latest scanlation and series information, as well as allowing you to discover, share and track your favorite works!</p>
-	            
-          	</div>
-        </div>
-        <div class="nav-container">
-      	<div id="navbar" class="collapse navbar-collapse">
-		        	<nav>
-		        		<ul class="nav navbar-nav">
-					    <li class="active"><a href="index.html">Home</a></li>
-					    <li><a href="login.html">Login</a></li>
-					    <li><a href="singup.html">Register</a></li>
-					    <li><a href="search.html">Search</a></li>
-					    <li><a href="forum.html">Forum</a></li>
-					    </ul>
-		        	</nav>
-				</div>
-      </div>	
+<body id="index-body">
+      <div class="nav navbar-nav">
+        <div class="links-nav">
+        <a class="active" href="index.html">
+        <i class="material-icons">home</i>
+        <div><span>home</span></div>
+        </a>
+        <a href="login.html">
+        <i class="material-icons">person</i>
+        <div><span>Login</span></div>
+        </a>
+        <a href="singup.html">
+        <i class="material-icons">view_list</i>
+        <div><span>Register</span></div>
+        </a>
+        <a href="search.html">
+        <i class="material-icons">search</i>
+        <div><span>search</span></div>
+        </a>
+        <a href="#">
+        <i class="material-icons">forum</i>
+        <div><span>forum</span></div>
+        </a>
       </div>
-      
+      <div class="footer-nav">
+        <a href="#" class="nav-sml">
+                  <i class="material-icons">settings</i>
+                  <div><span>settings</span></div>
+              </a>
+              <a href="/search.html" class="nav-sml">
+                  <i class="material-icons">search</i>
+                  <div><span>search</span></div>
+              </a>
+              <div class="logo-nav">
+              <img src="/resources/logo.png" alt="logo">
+              </div>
+      </div>
+      </div>
+  <div class="container-fluid">
+          <div class="cover-container row">
+          	<div class="inner-cover">
+  	            <h1 class="cover-heading text-uppercase">Baka-Updates</h1>
+  	            <p class="lead">Baka-Updates is a site dedicated to bringing the manga community the latest scanlation and series information, as well as allowing you to discover, share and track your favorite works!</p>
+            	</div>
+          </div>
+  	<div class="index-info-container row">
+    <div class="row">
+          <div class="col-lg-4">
+            <i class="fa fa-th-list fa-5x img-circle" aria-hidden="true" width="140" height="140"></i>
+            <h2>Costume Lists</h2>
+            <p>You can create your own lists! Each one with conpleted, on hold, dropped and reading status.</p>  
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <i class="fa fa-users fa-5x img-circle" aria-hidden="true" width="140" height="140"		></i>
+            <h2>Scanlators</h2>
+            <p>We feature scanlator groups, that post information about their recent releases and updates.</p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <i class="fa fa-bar-chart fa-5x img-circle" aria-hidden="true" width="140" height="140"></i>
+            <h2>Statistics</h2>
+            <p>Tracks your tastes! See the genres and tags you read the most.</p>
+          </div></div><!-- /.col-lg-4 -->
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="row featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5">
+          </div>
+        </div>
+
+        <hr class="row featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 col-md-push-5">
+            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5 col-md-pull-7">
+          </div>
+        </div>
+
+        <hr class="row featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+    	</div>
     </div>
-
-	<div class="container index-info-container">
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <i class="fa fa-th-list fa-5x img-circle" aria-hidden="true" width="140" height="140"></i>
-          <h2>Costume Lists</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <i class="fa fa-users fa-5x img-circle" aria-hidden="true" width="140" height="140"		></i>
-          <h2>Scanlators</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <i class="fa fa-comments fa-5x img-circle" aria-hidden="true" width="140" height="140"></i>
-          <h2>Forum</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
-  	</div>
-
-	<footer class="footer"><br>CopyRight:ソフィア・サン</br></footer>
+	<footer class="footer">CopyRight:ソフィア・サン</footer>
 </body>
 </html>

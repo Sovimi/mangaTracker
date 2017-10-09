@@ -1,10 +1,15 @@
 <!doctype html>
-<html>
+<html ng-app="myapp">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>My Manga List</title>
+	<!--Angular JS-->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<!--JQuery-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<!-- Add icon library -->
-	<script src="https://use.fontawesome.com/bcb80fddb3.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- bootstrap CSS -->
 	<link rel="stylesheet" type="text/css" href="resources/bootstrap-3.3.7-dist/css/bootstrap.css">
 	<!-- Optional theme -->
@@ -14,16 +19,91 @@
 	<!-- Costume CSS -->
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
 	<!-- Costume JavaScript-->
-	<script type="text/javascript" src="/js/lib.js"></script>
+	<script type="text/javascript" src="/js/lib_cookies.js"></script>
 	<script type="text/javascript" src="/js/lib_files.js"></script>	
-	<script type="text/javascript" src="/js/lib_cookies.js"></script>		
+	<script type="text/javascript" src="/js/lib.js"></script>
 </head>
-<body>
-	<div class="main-list-container container-fluid">
-		<!-- MISSING THE NAVBAR -->
-		<div class="list_wrapper col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 col-xlg-8 col-xlg-offset-2">
-			<div id="list-header" class="list_header-smlNav col-sm-7 col-sm-offset-2 col-md-7 col-md-offset-1 col-xlg-5 col-xlg-offset-1">
+<body ng-controller="MainCtrl">
+	<div ng-if="isAuthenticated">
+		<div class="nav navbar-nav">
+		  	<a href="profile.html" title="my profile" class="avatar-nav" style="background-image: url(/resources/user.jpeg);"></a>
+		  	<div class="links-nav">
+				<a class="active" href="home.html">
+				<i class="material-icons">home</i>
+				<div><span>home</span></div>
+				</a>
+				<a href="#">
+				<i class="material-icons">person</i>
+				<div><span>profile</span></div>
+				</a>
+				<a href="mangalist.html">
+				<i class="material-icons">view_list</i>
+				<div><span>lists</span></div>
+				</a>
+				<a href="search.html">
+				<i class="material-icons">search</i>
+				<div><span>search</span></div>
+				</a>
+				<a href="#">
+				<i class="material-icons">forum</i>
+				<div><span>forum</span></div>
+				</a>
 			</div>
+			<div class="footer-nav">
+				<a href="/index.html" onclick="userLogout()" class="">Logout</a>
+				<a href="#" class="nav-sml">
+	                <i class="material-icons">settings</i>
+	            </a>
+	            <a href="/search.html" class="nav-sml">
+	                <i class="material-icons">search</i>
+	            </a>
+	            <div class="logo-nav">
+	            	<img src="/resources/logo.png" alt="logo">
+	            </div>
+			</div>
+		</div>
+	</div>
+	<div ng-if="!isAuthenticated">
+	    <div class="nav navbar-nav">
+		  	<div class="links-nav">
+				<a class="active" href="index.html">
+				<i class="material-icons">home</i>
+				<div><span>home</span></div>
+				</a>
+				<a href="login.html">
+				<i class="material-icons">person</i>
+				<div><span>Login</span></div>
+				</a>
+				<a href="singup.html">
+				<i class="material-icons">view_list</i>
+				<div><span>Register</span></div>
+				</a>
+				<a href="search.html">
+				<i class="material-icons">search</i>
+				<div><span>search</span></div>
+				</a>
+				<a href="#">
+				<i class="material-icons">forum</i>
+				<div><span>forum</span></div>
+				</a>
+			</div>
+			<div class="footer-nav">
+				<a href="#" class="nav-sml">
+	                <i class="material-icons">settings</i>
+	                <div><span>settings</span></div>
+	            </a>
+	            <a href="/search.html" class="nav-sml">
+	                <i class="material-icons">search</i>
+	                <div><span>search</span></div>
+	            </a>
+	            <div class="logo-nav">
+	            <img src="/resources/logo.png" alt="logo">
+	            </div>
+			</div>
+		</div>
+	</div>
+	<div class="main-list-container container-fluid">
+		<div class="list_wrapper col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 col-xlg-8 col-xlg-offset-2">
 			<div class="list-div">
 				<div class="reading-list"></div>
 					<h3>Reading</h3>
@@ -34,15 +114,7 @@
 						<div class="col-lg-1">Volumes</div>
 						<div class="col-lg-1">Type</div>
 					</div>
-					<div class="row">
-						<div class="col-lg-8">
-						<a href="manga_url" title="Go to Manga Page">manga_title</a>
-						<span class="publishing-span">if_status_is_publishing</span>
-						</div>
-						<div class="col-lg-1">my_score</div>
-						<div class="col-lg-1">my_chapthers</div>
-						<div class="col-lg-1">my_volumes</div>
-						<div class="col-lg-1">manga_type</div>
+					<div class="row" id="reading-list">
 					</div>
 				<div class="completed-list"></div>	
 					<h3>Completed</h3>
@@ -53,15 +125,7 @@
 						<div class="col-lg-1">Volumes</div>
 						<div class="col-lg-1">Type</div>
 					</div>
-					<div class="row">
-						<div class="col-lg-8">
-						<a href="manga_url" title="Go to Manga Page">manga_title</a>
-						<span class="publishing-span">if_status_is_publishing</span>
-						</div>
-						<div class="col-lg-1">my_score</div>
-						<div class="col-lg-1">my_chapthers</div>
-						<div class="col-lg-1">my_volumes</div>
-						<div class="col-lg-1">manga_type</div>
+					<div class="row" id="completed-list">
 					</div>
 				<div class="onhold-list"></div>
 					<h3>On Hold</h3>
@@ -72,15 +136,7 @@
 						<div class="col-lg-1">Volumes</div>
 						<div class="col-lg-1">Type</div>
 					</div>
-					<div class="row">
-						<div class="col-lg-8">
-						<a href="manga_url" title="Go to Manga Page">manga_title</a>
-						<span class="publishing-span">if_status_is_publishing</span>
-						</div>
-						<div class="col-lg-1">my_score</div>
-						<div class="col-lg-1">my_chapthers</div>
-						<div class="col-lg-1">my_volumes</div>
-						<div class="col-lg-1">manga_type</div>
+					<div class="row" id="onhold-list">
 					</div>
 				<div class="droped-list"></div>
 					<h3>Droped</h3>
@@ -91,18 +147,13 @@
 						<div class="col-lg-1">Volumes</div>
 						<div class="col-lg-1">Type</div>
 					</div>
-					<div class="row">
-						<div class="col-lg-8">
-						<a href="manga_url" title="Go to Manga Page">manga_title</a>
-						<span class="publishing-span">if_status_is_publishing</span>
-						</div>
-						<div class="col-lg-1">my_score</div>
-						<div class="col-lg-1">my_chapthers</div>
-						<div class="col-lg-1">my_volumes</div>
-						<div class="col-lg-1">manga_type</div>
+					<div class="row" id="dropped-list">
 					</div>
+				</div>
 			</div>
 		</div>
-	</div>
+		<script type="text/javascript">
+		populateList();
+		</script>	
 </body>
 </html>

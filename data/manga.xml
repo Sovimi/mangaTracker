@@ -30,56 +30,56 @@
 	</MANGA>
 	<MANGA>
 		<TITLE>Fullmetal Alchemist</TITLE>
-		<ROMANJI>Berserk</ROMANJI>
-		<NATIVE>ベルセルク</NATIVE>
-		<DESCRIPTION>Guts, known as the Black Swordsman, seeks sanctuary from the demonic forces that pursue him and his woman, and also vengeance against the man who branded him as an unholy sacrifice. Aided only by his titanic strength, skill, and sword, Guts must struggle against his bleak destiny, all the while fighting with a rage that might strip him of his humanity. Berserk is a dark and brooding story of outrageous swordplay and ominous fate, in the theme of Shakespeare's Macbeth.</DESCRIPTION>
-		<YEAR>2004</YEAR>
-		<AUTHOR>Kentaro Miura</AUTHOR>
+		<ROMANJI>Hagane no Renkinjutsush</ROMANJI>
+		<NATIVE>鋼の錬金術師</NATIVE>
+		<DESCRIPTION>In this world, alchemists are those who study and perform the art of alchemical transmutation—the science of manipulating and transforming matter. They are bounded by the Law of Equivalent Exchange: in order to gain something, one must sacrifice something of equal value. 
+			Young Edward Elric, nicknamed the "Fullmetal Alchemist", is a State Alchemist working for the government of Amestris. As a child, Edward and his little brother Alphonse attempted the forbidden art of human transmutation to revive their late mother. In the accident that ensued, Edward lost his left leg and right arm, and Alphonse's soul was sealed in a large suit of armor. To reclaim their original bodies, the Elric brothers embark on a journey to find the Philosopher's Stone, a mythical object said to allow its user to perform alchemical miracles.</DESCRIPTION>
+		<YEAR>2001</YEAR>
+		<AUTHOR>Hiromu Harakawa</AUTHOR>
 		<STATUS>Completed</STATUS>
 		<TYPE>MANGA</TYPE>
-		<SCORE>89%</SCORE>
+		<SCORE>88%</SCORE>
 		<GENRES>
 			<GENRE>Action</GENRE>
 			<GENRE>Adventure</GENRE>
-			<GENRE>Drama</GENRE>
 			<GENRE>Fantasy</GENRE>
-			<GENRE>Horror</GENRE>
+			<GENRE>Comedy</GENRE>
+			<GENRE>Drama</GENRE>
 		</GENRES>
 		<TAGS>
-			<TAG>Demons</TAG>
-			<TAG>Gore</TAG>
 			<TAG>Military</TAG>
-			<TAG>Revenge</TAG>
-			<TAG>Tragedy</TAG>
+			<TAG>Shounen</TAG>
+			<TAG>Super Powers</TAG>
+			<TAG>War</TAG>
 		</TAGS>
 		<IMGURL>/resources/covers/fullmetal.jpg</IMGURL>
-		<PAGEURL>/manga/berserk.html</PAGEURL>
+		<PAGEURL>/manga/fullmetal.html</PAGEURL>
 	</MANGA>
 	<MANGA>
 		<TITLE>One Piece</TITLE>
-		<ROMANJI>Berserk</ROMANJI>
-		<NATIVE>ベルセルク</NATIVE>
-		<DESCRIPTION>Guts, known as the Black Swordsman, seeks sanctuary from the demonic forces that pursue him and his woman, and also vengeance against the man who branded him as an unholy sacrifice. Aided only by his titanic strength, skill, and sword, Guts must struggle against his bleak destiny, all the while fighting with a rage that might strip him of his humanity. Berserk is a dark and brooding story of outrageous swordplay and ominous fate, in the theme of Shakespeare's Macbeth.</DESCRIPTION>
+		<ROMANJI>One Piece</ROMANJI>
+		<NATIVE> ワンピース</NATIVE>
+		<DESCRIPTION>Gol D. Roger was known as the Pirate King, the strongest and most infamous being to have sailed the Grand Line. The capture and death of Roger by the World Government brought a change throughout the world. His last words before his death revealed the location of the greatest treasure in the world, One Piece. It was this revelation that brought about the Grand Age of Pirates, men who dreamed of finding One Piece (which promises an unlimited amount of riches and fame), and quite possibly the most coveted of titles for the person who found it, the title of the Pirate King.
+
+		Enter Monkey D. Luffy, a 17-year-old boy that defies your standard definition of a pirate. Rather than the popular persona of a wicked, hardened, toothless pirate who ransacks villages for fun, Luffy’s reason for being a pirate is one of pure wonder; the thought of an exciting adventure and meeting new and intriguing people, along with finding One Piece, are his reasons of becoming a pirate. Following in the footsteps of his childhood hero, Luffy and his crew travel across the Grand Line, experiencing crazy adventures, unveiling dark mysteries and battling strong enemies, all in order to reach One Piece.</DESCRIPTION>
 		<YEAR>1997</YEAR>
-		<AUTHOR>Kentaro Miura</AUTHOR>
+		<AUTHOR>Eiichiro Oda</AUTHOR>
 		<STATUS>Publishing</STATUS>
 		<TYPE>MANGA</TYPE>
-		<SCORE>89%</SCORE>
+		<SCORE>87%</SCORE>
 		<GENRES>
 			<GENRE>Action</GENRE>
+			<GENRE>Comedy</GENRE>
 			<GENRE>Adventure</GENRE>
-			<GENRE>Drama</GENRE>
 			<GENRE>Fantasy</GENRE>
-			<GENRE>Horror</GENRE>
 		</GENRES>
 		<TAGS>
-			<TAG>Demons</TAG>
-			<TAG>Gore</TAG>
-			<TAG>Military</TAG>
-			<TAG>Revenge</TAG>
-			<TAG>Tragedy</TAG>
+			<TAG>Shounen</TAG>
+			<TAG>Super Powers</TAG>
+			<TAG>Pirates</TAG>
+			<TAG>Time Skip</TAG>
 		</TAGS>
-		<IMGURL>resources/covers/onePiece.png</IMGURL>
-		<PAGEURL>/manga/berserk.html</PAGEURL>
+		<IMGURL>/resources/covers/onePiece.png</IMGURL>
+		<PAGEURL>/manga/onepiece.html</PAGEURL>
 	</MANGA>
 </BOOKSHELF>

@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Index</title>
+  <!--Angular JS-->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <!--JQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<!-- Add icon library -->
-	<script src="https://use.fontawesome.com/bcb80fddb3.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- bootstrap CSS -->
 	<link rel="stylesheet" type="text/css" href="resources/bootstrap-3.3.7-dist/css/bootstrap.css">
 	<!-- Optional theme -->
@@ -13,62 +19,70 @@
 	<!-- Costume CSS -->
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
   <!-- Costume JavaScript-->
-  <script type="text/javascript" src="/js/lib.js"></script>
+  <script type="text/javascript" src="/js/lib_cookies.js"></script>
   <script type="text/javascript" src="/js/lib_files.js"></script> 
-  <script type="text/javascript" src="/js/lib_cookies.js"></script> 
+  <script type="text/javascript" src="/js/lib.js"></script>
+  <script type="text/javascript">
+    checkLoggedUser();
+  </script>
 </head>	
-<body>	
-    <div class="site-wrapper container-fluid">
-
-      <div class="site-wrapper-inner">
-
-        <div class="cover-container">
-
-        	<div class="inner cover">
-	            <h1 class="cover-heading">Baka-Updates</h1>
-	            <p class="lead">Baka-Updates Manga is a site dedicated to bringing the manga community the latest scanlation and series information, as well as allowing you to discover, share and track your favorite works!</p>
-	            
-          	</div>
-
-          	
-
-        </div>
-        <div class="nav-container">
-      	<div id="navbar" class="collapse navbar-collapse">
-		        	<nav>
-		        		<ul class="nav navbar-nav">
-					    <li><a href="index.html">Home</a></li>
-					    <li><a href="login.html">Login</a></li>
-					    <li class="active"><a href="singup.html">Register</a></li>
-					    <li><a href="search.html">Search</a></li>
-					    <li><a href="forum.html">Forum</a></li>
-					    </ul>
-		        	</nav>
-				</div>
-      </div>	
+<body id="register-body">
+      <div class="nav navbar-nav">
+        <div class="links-nav">
+        <a class="active" href="index.html">
+        <i class="material-icons">home</i>
+        <div><span>home</span></div>
+        </a>
+        <a href="login.html">
+        <i class="material-icons">person</i>
+        <div><span>Login</span></div>
+        </a>
+        <a href="singup.html">
+        <i class="material-icons">view_list</i>
+        <div><span>Register</span></div>
+        </a>
+        <a href="search.html">
+        <i class="material-icons">search</i>
+        <div><span>search</span></div>
+        </a>
+        <a href="#">
+        <i class="material-icons">forum</i>
+        <div><span>forum</span></div>
+        </a>
       </div>
-      
-    </div>
-
-	<div class="container register-info-container">
-      <form class="form-signin">
-        <h2 class="form-signin-heading">Register</h2>
+      <div class="footer-nav">
+        <a href="#" class="nav-sml">
+                  <i class="material-icons">settings</i>
+                  <div><span>settings</span></div>
+              </a>
+              <a href="/search.html" class="nav-sml">
+                  <i class="material-icons">search</i>
+                  <div><span>search</span></div>
+              </a>
+              <div class="logo-nav">
+              <img src="/resources/logo.png" alt="logo">
+              </div>
+      </div>
+      </div>
+  <div class="container-fluid">
+        <div class="cover-sm-container row">
+            <div class="inner-cover"></div>
+        </div>
+	<div class="row register-info-container">
+        <form class="form-signup">
+        <h2 class="form-signup-heading">Register</h2>
         <label for="inputEmail" class="sr-only">Email address</label>
         <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
         <label for="inputUsername" class="sr-only">Username</label>
-        <input type="username" id="inputUsername" class="form-control" placeholder="Username" required>
+        <input type="email" id="inputUsername" class="form-control" placeholder="Username" required>
         <label for="inputPassword" class="sr-only">Password</label>
         <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
         <label for="repeatPassword" class="sr-only">Repeat Password</label>
         <input type="password" id="repeatPassword" class="form-control" placeholder="Repeat Password" required>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="remember-me"> Remember me
-          </label>
-        </div>
-        <button class="btn btn-lg btn-block" onclick="saveUser()" type="button">Sign Up</button>
+        <button class="btn btn-lg btn-block my-btn" onclick="saveUser()" type="button">Sign Up</button>
       </form>
   	</div><p id="demoTT"></p>
-	<footer class="footer"><br>CopyRight:ソフィア・サン</br></footer>
+    </div>
+	<footer class="footer">CopyRight:ソフィア・サン</footer>
 </body>
 </html>

@@ -1,0 +1,912 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"backgr",
+				"background-position"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"backgou",
+				"background-image"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"tet",
+				"text-anchor"
+			],
+			[
+				"t",
+				"table-cell"
+			],
+			[
+				"div",
+				"div\tTag"
+			],
+			[
+				"nav",
+				"nav\tTag"
+			],
+			[
+				"onMo",
+				"onmouseover\tAttr"
+			],
+			[
+				"ab",
+				"absolute"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"posi",
+				"object-position"
+			],
+			[
+				"text-al",
+				"text-align"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"al",
+				"alt\tAttr"
+			],
+			[
+				"form",
+				"formbox"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"col",
+				"colspan\tAttr"
+			],
+			[
+				"td",
+				"td\tTag"
+			],
+			[
+				"tr",
+				"tr\tTag"
+			],
+			[
+				"th",
+				"th\tTag"
+			],
+			[
+				"the",
+				"thead\tTag"
+			],
+			[
+				"ta",
+				"table\tTag"
+			],
+			[
+				"a",
+				"a\t<a href=\"mailto:\"> "
+			],
+			[
+				"text",
+				"text-underline-position"
+			],
+			[
+				"text-col",
+				"text-decoration-color"
+			],
+			[
+				"backgro",
+				"background-color"
+			],
+			[
+				"b",
+				"br\t<br>"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"as",
+				"absolute"
+			],
+			[
+				"li",
+				"li\tTag"
+			],
+			[
+				"ul",
+				"ul\tTag"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"p",
+				"p\tTag"
+			],
+			[
+				"ali",
+				"align-items"
+			],
+			[
+				"fo",
+				"footer\tTag"
+			],
+			[
+				"h1",
+				"h1\tTag"
+			],
+			[
+				"head",
+				"header\t<header>"
+			],
+			[
+				"n",
+				"nColumns"
+			],
+			[
+				"ra",
+				"random"
+			],
+			[
+				"ran",
+				"randJ"
+			],
+			[
+				"num",
+				"numPorServir"
+			],
+			[
+				"j",
+				"j"
+			],
+			[
+				"o",
+				"onesCountRow"
+			],
+			[
+				"coun",
+				"countCells"
+			],
+			[
+				"rand",
+				"randBefore"
+			],
+			[
+				"tre",
+				"treasureLimit"
+			],
+			[
+				"an",
+				"AntiAlias"
+			],
+			[
+				"local",
+				"localRes"
+			],
+			[
+				"locla",
+				"localRes"
+			],
+			[
+				"op",
+				"opBefore"
+			],
+			[
+				"el",
+				"elseif\tElse If"
+			],
+			[
+				"pri",
+				"priScroll"
+			],
+			[
+				"cou",
+				"coountFind"
+			],
+			[
+				"pr",
+				"priority"
+			],
+			[
+				"operat",
+				"operation"
+			],
+			[
+				"operati",
+				"operationsCount"
+			],
+			[
+				"prio",
+				"priorityCount"
+			],
+			[
+				"Bar",
+				"BarOrientation"
+			],
+			[
+				"SolidC",
+				"SolidColor"
+			],
+			[
+				"CURREN",
+				"CURRENTPATH#\t#CURRENTPATH#"
+			],
+			[
+				"Subs",
+				"Substitute"
+			],
+			[
+				"MeterIco",
+				"MeterIcon1"
+			],
+			[
+				"Meas",
+				"MeasureName"
+			],
+			[
+				"Mes",
+				"Measure"
+			],
+			[
+				"Text",
+				"Text"
+			],
+			[
+				"Image",
+				"ImageTint"
+			],
+			[
+				"dbo",
+				"dbo_divisoes"
+			],
+			[
+				"In",
+				"INTO"
+			],
+			[
+				"IN",
+				"INSERT"
+			],
+			[
+				"V",
+				"Vidro"
+			],
+			[
+				"c",
+				"Com"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Rainmeter/Rainmeter.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Rainmeter/Rainmeter.sublime-build",
+					""
+				],
+				[
+					"Packages/Rainmeter/Rainmeter.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/Rainmeter/Rainmeter.sublime-build",
+				"Run"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 384.0,
+		"last_filter": "Git",
+		"selected_items":
+		[
+			[
+				"Git",
+				"Git: Init"
+			],
+			[
+				"packe",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"paca",
+				"Package Control: Install Package"
+			],
+			[
+				"box",
+				"Boxy Theme: Activation"
+			],
+			[
+				"pa",
+				"Package Control: Satisfy Dependencies"
+			],
+			[
+				"boxy",
+				"Boxy Theme: Extras"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 480.0
+	},
+	"console":
+	{
+		"height": 202.0,
+		"history":
+		[
+			">>> settings = sublime.load_settings('my_shared.sublime-settings')",
+			">> settings = sublime.load_settings('my_shared.sublime-settings')",
+			"settings = sublime.load_settings('my_shared.sublime-settings')",
+			">> settings = sublime.load_settings('my_shared.sublime-settings')"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/sofia/mangaTracker"
+	],
+	"file_history":
+	[
+		"/C/Users/sofia/School/2º Ano/2º Semestre/Tecnologias para Web/Projeto/Implementação/style.css",
+		"/C/Users/sofia/School/2º Ano/2º Semestre/Tecnologias para Web/Projeto/Implementação/search.html",
+		"/C/Users/sofia/School/2º Ano/2º Semestre/Tecnologias para Web/Projeto/Implementação/index.html",
+		"/C/Users/sofia/AppData/Roaming/Sublime Text 3/Packages/Git/Git.sublime-settings",
+		"/C/Users/sofia/AppData/Roaming/Sublime Text 3/Packages/User/Git.sublime-settings",
+		"/C/Users/sofia/School/2º Ano/2º Semestre/Tecnologias para Web/Projeto/Implementação/login.html",
+		"/C/Users/sofia/School/2º Ano/2º Semestre/Tecnologias para Web/Projeto/Implementação/singup.html",
+		"/C/Users/sofia/School/2º Ano/2º Semestre/Tecnologias para Web/Projeto/Implementação/anime_list.html",
+		"/C/Users/sofia/School/2º Ano/2º Semestre/Tecnologias para Web/Projeto/Implementação/profile.html",
+		"/C/Users/sofia/School/2º Ano/2º Semestre/Tecnologias para Web/Projeto/Implementação/scripts.js",
+		"/C/Users/sofia/School/2º Ano/2º Semestre/Tecnologias para Web/Projeto/Implementação/data.json",
+		"/C/Users/sofia/School/2º Ano/2º Semestre/Tecnologias para Web/Projeto/Implementação/fase1_project.sublime-project",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Anywhere/Player/Black Dreamer Player.ini",
+		"/C/Users/sofia/Documents/Themes/SjingekiNokyiojin complet css.txt",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Dots-Visualizer/Dots-Visualizer.ini",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Dots-Visualizer/@Resources/DotGenerator.lua",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Dots-Visualizer/@Resources/AppearanceVariable.inc",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Dots-Visualizer/@Resources/AudioVariable.inc",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Dots-Visualizer/Setting/Setting.ini",
+		"/C/Users/sofia/AppData/Roaming/Rainmeter/Rainmeter.ini",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Number PI/Player/Player - Light.ini",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Number PI/@Resources/Variables.inc",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Simple Clean/Player/Player.ini",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Simple Clean/@Resources/Variables.inc",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Simple Clean/Player/Player(Spotify).ini",
+		"/C/Users/sofia/Downloads/ReadFileExample/ReadFileExample/src/pt/ipbeja/po2/readfile/ReadFileExample.java",
+		"/C/Users/sofia/Downloads/PersonalWebPages_XMLDOM/data.js",
+		"/C/Users/sofia/Downloads/PersonalWebPages_XMLDOM/lib_xml_dom.js",
+		"/C/Users/sofia/Downloads/PersonalWebPages_XMLDOM/index.htm",
+		"/C/Users/sofia/Downloads/PersonalWebPages_XMLDOM/lib.js",
+		"/C/Users/sofia/Sovimi.github.io/curriculum.html",
+		"/C/Users/sofia/Sovimi.github.io/curriculum_2.html",
+		"/C/Users/sofia/Sovimi.github.io/styles.css",
+		"/C/Users/sofia/Sovimi.github.io/script.js",
+		"/C/Users/sofia/Downloads/minesweeper_irina/src/pt/ipbeja/minesweeper/model/GameModel.java",
+		"/C/Users/sofia/School/2º Ano/2º Semestre/Redes de Computadores 2/ACL_awnsers",
+		"/C/Users/sofia/Sovimi.github.io/schedule.html",
+		"/C/Users/sofia/Sovimi.github.io/schedule_2.html",
+		"/C/Users/sofia/Sovimi.github.io/contact_2.html",
+		"/C/Users/sofia/Sovimi.github.io/index_2.html",
+		"/C/Users/sofia/Sovimi.github.io/contact.html",
+		"/C/Program Files/nodejs/node_modules/npm/package.json",
+		"/C/Users/sofia/School/1º Ano/2º Semestre/Programação Orientada p. Objetos/workspace/FifteenJFX-V1/FifteenJFX-V1/src/pt/ipbeja/estig/fifteen/gui/FifteenJavaFXGUI.java",
+		"/C/Users/sofia/School/1º Ano/2º Semestre/Programação Orientada p. Objetos/workspace/FifteenJFX-V1/FifteenJFX-V1/src/pt/ipbeja/estig/fifteen/gui/PieceJFXButton.java",
+		"/C/Users/sofia/School/1º Ano/2º Semestre/Programação Orientada p. Objetos/workspace/tic-tac-toe/src/pt/ipbeja/ticttactoe/gui/MyScene.java",
+		"/C/Users/sofia/School/1º Ano/2º Semestre/Programação Orientada p. Objetos/workspace/tic-tac-toe/src/pt/ipbeja/ticttactoe/gui/MyButton.java",
+		"/C/Users/sofia/Sovimi.github.io/index.html",
+		"/C/Users/sofia/Sovimi.github.io/date.html",
+		"/C/Users/sofia/School/2º Ano/2º Semestre/Tecnologias para Web/Trab5_15099SofiaMilitao/curriculum.html",
+		"/C/Users/sofia/School/2º Ano/2º Semestre/Redes de Computadores 2/LAB_2_3",
+		"/C/Users/sofia/School/2º Ano/2º Semestre/Tecnologias para Web/Trab5_15099SofiaMilitao/welcome.html",
+		"/C/Users/sofia/School/2º Ano/2º Semestre/Redes de Computadores 2/Lab_2_Switches",
+		"/C/Users/sofia/School/2º Ano/2º Semestre/Tecnologias para Web/welcome.html",
+		"/C/Users/sofia/School/1º Ano/2º Semestre/PO2/Workspace/15099_SofiaMilitao_TP1_PO2_2016-2017/src/pt/ipbeja/po2/memory/model/Util.java",
+		"/C/Users/sofia/School/1º Ano/2º Semestre/PO2/Workspace/15099_SofiaMilitao_TP1_PO2_2016-2017/src/pt/ipbeja/po2/memory/model/GameModel.java",
+		"/C/Users/sofia/School/1º Ano/2º Semestre/PO2/Workspace/15099_SofiaMilitao_TP1_PO2_2016-2017/src/pt/ipbeja/po2/memory/viewController/ButtonsPane.java",
+		"/C/Users/sofia/java/HelloWorld.java",
+		"/C/Users/sofia/School/2º Ano/2º Semestre/Estrutura de Dados e Algoritmos/Workspace/guia3_eda/src/Guia3/MainHeapSort.java",
+		"/C/Users/sofia/School/2º Ano/2º Semestre/Estrutura de Dados e Algoritmos/Workspace/guia2_eda/src/guia2_eda/MergeSort.java",
+		"/C/Users/sofia/Militao15099/teste/MergeSort.class",
+		"/C/Users/sofia/Downloads/Dragon.Age.Inquisition.Deluxe.Edition.Crack.Only-CPY/Crack/CPY.ini",
+		"/E/Sofsvieira/Chihaya/ISO's/Games/Dragon Age Inquisition/cpy-daide.nfo",
+		"/C/Users/sofia/Documents/Visual Studio 2013/Projects/DeDclient/DeDclient/DeDclient.cpp",
+		"/C/Users/sofia/Documents/Visual Studio 2013/Projects/DeDv2/DaDv2/DeDv2.cpp",
+		"/C/Users/sofia/Documents/Visual Studio 2013/Projects/DeDtest/DeDtest/DeDtest.cpp",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Fountain of Colors - Copy/Clone/Clone.ini",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Zone Player/@Resources/Variables.inc",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Zone Player/Light/PlayerArt.ini",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/WhiteDior/Music/Music 1/Music 1.ini",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Spherical/Music/Music2.ini",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Spherical/@Resources/Variables.inc",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Rusa_Jantan/MPlayer/Player.ini",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/SkySlate/SkySlate.ini",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/SkySlate/UserVariables.inc",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/RKS SIMPLE/MUSE.ini",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/RKS REvisualize/RKS revisualise.ini",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/RED Suite/Player/player.ini",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/OBLIQ/Player/Player Upright.ini",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/OBLIQ/Player/Player.ini",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/OBLIQ/@Resources/Variables.inc",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/OBLIQ/@Resources/Includes/Base.inc",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Mangotsfield/MangoPlayer/mangoplayer.ini",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Mazio/Player/Lite.ini",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Modular Minimalism/Music/AlbumArt/AlbumArt.ini",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Modular Minimalism/@Resources/Variables.ini",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Mazio/@Resources/Variables.inc",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Geoz Blocks/Music/Music/Music Minimal.ini",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/LIM!T/music/fill-player.ini",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Geoz Blocks/@Resources/variables.inc",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Geoz Blocks/Music/AlbumArt/Album Art.ini",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Desktop+++/Circles/Music/Music.ini",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Desktop+++/@Resources/UserSettings.ini",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Dark Glass v2.0/Music/Music.ini",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Modular Minimalism/Music/AlbumArt/AlbumArtWithProgressBar.ini",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Simplistic/Media/Media.ini",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/UI White Theme 1.0/Date - Time - Search - Weather/Weather/Weather C.ini",
+		"/C/Users/sofia/Downloads/Gallant x Tablo x Eric Nam - Cave Me In [www.k2nblog.com].7z",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Red Cold Bar/bar.ini",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Red Cold Bar/bar.png",
+		"/C/Users/sofia/School/2Ano/Linguagens de Progrmação/Python/projects/TG1617/output.dot",
+		"/C/Users/sofia/School/2Ano/BD ll/Projeto/Create_Procedures.sql",
+		"/C/Users/sofia/School/2Ano/BD ll/Projeto/Equipamento",
+		"/C/Users/sofia/School/2Ano/BD ll/Projeto/Backups",
+		"/C/Users/sofia/School/2Ano/BD ll/Projeto/LOGINS.sql",
+		"/C/Users/sofia/School/2Ano/BD ll/Projeto/Create_Triggers.sql",
+		"/C/Users/sofia/School/2Ano/BD ll/Projeto/Create_Tables.sql",
+		"/C/Users/sofia/School/2Ano/BD ll/Projeto/CreateDatabase&Filegroups.sql",
+		"/C/Users/sofia/School/2Ano/BD ll/Lab6_ex1.sql",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Enigma/@Resources/Measures/YahooWeather.inc",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Enigma/Sidebar/Weather/Weather.ini",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Enigma/@Resources/User/Options.inc",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Desktop+++/Equalizers/No Circle Cutouts/Bottom Equalizer/EqualizerBottom.ini",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Enigma/Sidebar/Music/Music-Art.ini",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/Enigma/Taskbar/Weather/Moon/Moon-IconRight.ini",
+		"/C/Users/sofia/Downloads/IntroduçãoRoutingEstático_Parte1_CCNA_Módulos_6e7.txt",
+		"/C/Users/sofia/Downloads/NOTEVIEW_1_03/HexDump.ini",
+		"/C/Users/sofia/Downloads/4-IP-Addressing_Subnets_VLSM_ARP_RARP.txt",
+		"/C/Program Files (x86)/Graphviz2.38/bin/outputTEST.dot",
+		"/C/Program Files (x86)/Graphviz2.38/bin/output.dot",
+		"/C/Program Files (x86)/Graphviz2.38/bin/outputTEST.ps",
+		"/C/Users/sofia/Desktop/output.dot",
+		"/C/Users/sofia/School/2Ano/Linguagens de Progrmação/Python/output.dot",
+		"/C/Users/sofia/School/2Ano/Linguagens de Progrmação/Python/TP/DGEEC_DSEE_DEES_2016_Inscritos_201516.txt",
+		"/C/Tor Browser/Browser/TorBrowser/Data/Tor/torrc",
+		"/C/Users/sofia/School/2º Ano/Redes De Computadores/IOS/IOS/c2960s-universalk9-mz.150-1.SE2.bin",
+		"/C/Users/sofia/School/2º Ano/Redes De Computadores/IOS/IOS/c2600-is-mz.122-40.bin",
+		"/C/Users/sofia/Documents/Rainmeter/Skins/MusicCity/Circle Launcher 2/right.ini",
+		"/C/Users/sofia/School/2º Ano/Linguagens de Progrmação/Python/TP/courseTest"
+	],
+	"find":
+	{
+		"height": 43.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"singup",
+			";\n",
+			"container",
+			"inner",
+			"setTextAndImage",
+			"estig_logo",
+			"PLAYER_INICIAL_LOCATION",
+			"CleanConsole",
+			"IDENTITY(1,1",
+			"IDENTITY(1,1)",
+			"IDENTITY(1",
+			"teor_",
+			"teor",
+			"alcool",
+			"alcol",
+			"alco",
+			"20",
+			"17",
+			"factormin",
+			"factor",
+			"Host",
+			"Plugin=WebParser",
+			"Plugin=NowPlaying",
+			"Plugin=WebParser",
+			"url",
+			"mesureSite",
+			"0",
+			"Last",
+			"1111001",
+			")\n",
+			"countCells",
+			"Winamp",
+			"priorityCount",
+			"http://xml.weather.com/weather/local/#Location#?cc=*&unit=#Metric#&dayf=",
+			".png",
+			"GmailUsername",
+			"#SKINSPATH#Roots\\resources\\",
+			"color.inc",
+			"last",
+			"gxt",
+			"limit",
+			"http://xml.weather.com/weather/local/",
+			"Whatcha listenin' 2",
+			"Whatcha listenin' 2 small",
+			"\\",
+			"Whatcha listenin",
+			"Sofsvieira",
+			"water",
+			"[MeterIcon1",
+			"UserSettings.ini",
+			"Icon1Picture",
+			"Rainmeter:Open Skins Folder",
+			"\"#CONTROLSPATH#\"",
+			"#DOCUMENTSPATH#",
+			"#APPLICATIONSPATH#",
+			"#GAMESPATH#",
+			"#DOWNLOADSPATH#",
+			"\"#BOOKMARKSPATH#",
+			"\"C:\\Users\\sofia\\Games",
+			"LEFT",
+			"INNER",
+			"JOIN",
+			"INNER",
+			"construir",
+			"contem",
+			"divisoes",
+			"ID_porta",
+			"nome_div",
+			"10, 40) /*Suite Com Varanda*/",
+			"7, 22) /*Casa de Banho Média*/",
+			"6, 25) /*Sala pequena com Varanda*/",
+			"6, ) /*Sala pequena com Varanda*/",
+			"8, 12) /*Casa de banho Pequena*/",
+			"8, 8) /*Casa de banho Pequena*/",
+			"9, 20) /*Quarto*/",
+			"8 15) /*Quarto*/",
+			"9, 20) /*Quarto*/",
+			"9, 15) /*Quarto*/",
+			"12, 40) /*Cozinha*/",
+			"12, 35) /*Cozinha*/",
+			"12, 25) /*Cozinha*/",
+			"12, 12) /*Cozinha*/",
+			"'Garagem')",
+			"'Arrecadação')",
+			"'Quintal'",
+			"'Quarto')",
+			"'Suite c/ Varanda'",
+			"'Toilet'",
+			"'Cozinha'",
+			"'Casa de Banho Pequena'",
+			"'Casa de Banho Média'",
+			"'Sala Pequena c/ Varanda'",
+			"'Sala Pequena'",
+			"'Sala Média c/ Varanda'",
+			"'Sala Média'",
+			"'Sala Grande c/ Varanda'",
+			"'Sala Grande'",
+			"nome_div",
+			"porta",
+			"0",
+			"soalho",
+			"roupeiro",
+			"Porta",
+			"Pia",
+			"janela",
+			"ilumina",
+			"espelho",
+			"0)",
+			"ID_torneira)",
+			"(ID_acabamento,ID_banheira",
+			"'Rosa'",
+			"'Verde'",
+			"'Cizento'",
+			"'Vermelho'",
+			"'Preto'",
+			"'Branco'",
+			"'Preta'",
+			"'Natural'",
+			"'Castanho'",
+			"nome_cor",
+			"(ID_materiais, tipo_materiais)",
+			"14, ) /*Garagem*/",
+			"13, ) /*Arrecadação*/",
+			"12, ) /*Quintal*/",
+			"11, ) /*Toilet*/",
+			"7, ) /*Casa de Banho Média*/",
+			"10, ) /*Suite Com Varanda*/",
+			"15, ) /*Quarto com Varanda*/"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"gLiMin",
+			"gLi",
+			"Plugin=WebParser",
+			"*nCells",
+			"iTunes",
+			"priScroll",
+			"http://wxdata.weather.com/wxdata/weather/local/#Location#?cc=*&unit=#Metric#&dayf=",
+			"http://wxdata.weather.com/wxdata/weather/local/",
+			"Clean",
+			"Clean small",
+			"/",
+			"UserSettings2.ini",
+			"\"C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe\"",
+			"C:\\Users\\sofia\\Videos\\Anime",
+			"C:\\Users\\sofia\\Pictures",
+			"C:\\Users\\sofia\\Downloads",
+			"C:\\Users\\sofia\\School",
+			"\"C:\\Users\\sofia\\Games",
+			"INNER",
+			"LEFT",
+			"dbo_construir",
+			"dbo_contem",
+			"dbo_divisoes",
+			"9, 40) /*Suite Com Varanda*/",
+			"6, 22) /*Casa de Banho Média*/",
+			"5, 25) /*Sala pequena com Varanda*/",
+			"5, 20) /*Sala pequena com Varanda*/",
+			"7, 12) /*Casa de banho Pequena*/",
+			"7, 8) /*Casa de banho Pequena*/",
+			"8, 20) /*Quarto*/",
+			"8, 15) /*Quarto*/",
+			"8, 20) /*Quarto*/",
+			"8 15) /*Quarto*/",
+			"11, 40) /*Cozinha*/",
+			"11, 35) /*Cozinha*/",
+			"11, 25) /*Cozinha*/",
+			"11, 12) /*Cozinha*/",
+			"14) /*'Garagem'*/",
+			"13) /*'Arrecadação'*/",
+			"12",
+			"8) /*'Quarto*/",
+			"9",
+			"10",
+			"11",
+			"7",
+			"6",
+			"5",
+			"4",
+			"3",
+			"2",
+			"16",
+			"1",
+			"ID_div",
+			"NULL",
+			"0, '')",
+			"ID_torneira, nome_acabamento)",
+			"(ID_banheira",
+			"3",
+			"8",
+			"6",
+			"2",
+			"5",
+			"7",
+			"5",
+			"10",
+			"4",
+			"ID_cor",
+			"(tipo_materiais)",
+			"14, 40) /*Garagem*/",
+			"13, 35) /*Arrecadação*/",
+			"12, 100) /*Quintal*/",
+			"11, 6) /*Toilet*/",
+			"7, 22) /*Casa de Banho Média*/",
+			"10, 40) /*Suite Com Varanda*/",
+			"15, 25) /*Quarto com Varanda*/",
+			"12, 40) /*Cozinha*/",
+			"6, 25) /*Sala pequena com Varanda*/",
+			"1, 50) /*Sala Grande*/",
+			"14, 35) /*Garagem*/",
+			"8, 12) /*Casa de banho Pequena*/",
+			"7, 22) /*Casa de Banho Média*/",
+			"15, 25) /*Quarto com Varanda*/",
+			"9, 20) /*Quarto*/",
+			"12, 35) /*Cozinha*/",
+			"4, 17) /*Sala Pequena*/",
+			"3, 40)  /*Sala média com varanda*/",
+			"6, 25) /*Sala pequena com Varanda*/",
+			"14, 35) /*Garagem*/",
+			"8, 12) /*Casa de banho Pequena*/",
+			"15, 25) /*Quarto com Varanda*/",
+			"9, 20) /*Quarto*/",
+			"12, 25) /*Cozinha*/",
+			"14, 40) /*Garagem*/",
+			"8, 8) /*Casa de banho Pequena*/",
+			"9, 15) /*Quarto*/",
+			"12, 12) /*Cozinha*/",
+			"3, 35)  /*Sala média com varanda*/",
+			"13, ) /*Arrecadação*/",
+			"12, ) /*Quintal*/",
+			"11, ) /*Toilet*/",
+			"10, ) /*Suite Com Varanda*/",
+			"1, ) /*Sala Grande*/",
+			"7, ) /*Casa de Banho Média*/",
+			"4, ) /*Sala Pequena*/",
+			"15, ) /*Quarto com Varanda*/",
+			"6, ) /*Sala pequena com Varanda*/",
+			"6, )",
+			"14, ) /*Garagem*/",
+			"14, )",
+			"8, ) /*Casa de banho Pequena*/",
+			"8, )",
+			"9, ) /*Quarto*/",
+			"9, )",
+			"12, ) /*Cozinha*/",
+			"12, )",
+			"3, )  /*Sala média com varanda*/",
+			"3, )",
+			"3, ) /*Sala média com varanda*/",
+			"15",
+			"(ID_tipodeconst, quant_div, ID_div, area_div)",
+			"3",
+			"6",
+			"14",
+			"8",
+			"9",
+			"12",
+			"', )",
+			"(quant_div, ID_tipodeconst, ID_div, area_div)"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.exec":
+	{
+		"height": 29.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Rainmeter/Rainmeter.sublime-build",
+	"project": "mangaTracker.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 212.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
