@@ -2,10 +2,10 @@ var userData;
 var ofyear="", oftype="", ofstatus="", sortby="", ofgenres=[], oftags=[], input;
 var mystatus="", mychapter="", myvolume=""; 
 var authorized = isAuthorized();
-var xmlDoc = loadXML("/data/manga.xml");
-var xmlDocUser = loadXML("/data/user.xml");
+var xmlDoc = loadXML("data/manga.xml");
+var xmlDocUser = loadXML("data/user.xml");
 parser = new DOMParser();
-var xmlDocList = loadXML("/data/myMangaList.xml");
+var xmlDocList = loadXML("data/myMangaList.xml");
 
 function removeArrayDuplicates(array){
   newArray =[];
@@ -23,14 +23,14 @@ function authenticator() {
     x = document.getElementById("inputEmail").value;
     y = document.getElementById("inputPassword").value;
 
-    userData = JSON.parse(loadJSON("/data/data.json"));
+    userData = JSON.parse(loadJSON("data/data.json"));
 
     for (var i = userData.users.length - 1; i >= 0; i--) {
 
         if (x === userData.users[i].email && y === userData.users[i].password) {
             text = "valid user";
             this.setCookie("user", userData.users[i].username, 15);
-            window.location = '/home.html';
+            window.location = 'home.html';
         } else {
             text = "Not a user";
         }
@@ -50,19 +50,19 @@ function isAuthorized() {
 
 function checkLoggedUser() {
   if (isAuthorized()) {
-    window.location = '/home.html';
+    window.location = 'home.html';
   }
 }
 
 function checkUserLogout(){
   if (!isAuthorized()) {
-    window.location = '/index.html';
+    window.location = 'index.html';
   }
 }
 
 function userLogout(){
   deleteCookie("user");
-  window.location = "/index.html";
+  window.location = "index.html";
 }
 
 /*-------------- SEARCH ------------------*/

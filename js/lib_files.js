@@ -61,7 +61,7 @@ function loadXML(xmlFile) {
 /*------ NOT WORKING PROPERLY ---------*/
 function saveUser(){
     var x,y,myJSON;
-    userData = JSON.parse(loadJSON("/data/data.json"));
+    userData = JSON.parse(loadJSON("data/data.json"));
 
     x = document.getElementById("inputEmail").value;
     y = document.getElementById("inputPassword").value;
@@ -96,7 +96,7 @@ function saveUser(){
             return false;
         }
         
-        http_request.open("GET", "/saveData.php?myJSON="+myJSON, false);
+        http_request.open("GET", "saveData.php?myJSON="+myJSON, false);
         http_request.setRequestHeader("Content-type", "application/php; charset=UTF-8");
 
 }
