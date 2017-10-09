@@ -2,10 +2,10 @@ var userData;
 var ofyear="", oftype="", ofstatus="", sortby="", ofgenres=[], oftags=[], input;
 var mystatus="", mychapter="", myvolume=""; 
 var authorized = isAuthorized();
-var xmlDoc = loadXML("data/manga.xml");
-var xmlDocUser = loadXML("data/user.xml");
+var xmlDoc = loadXML("/mangaTrackers/data/manga.xml");
+var xmlDocUser = loadXML("/mangaTrackers/data/user.xml");
 parser = new DOMParser();
-var xmlDocList = loadXML("data/myMangaList.xml");
+var xmlDocList = loadXML("/mangaTrackers/data/myMangaList.xml");
 
 function removeArrayDuplicates(array){
   newArray =[];
