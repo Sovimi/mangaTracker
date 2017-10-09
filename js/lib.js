@@ -23,7 +23,7 @@ function authenticator() {
     x = document.getElementById("inputEmail").value;
     y = document.getElementById("inputPassword").value;
 
-    userData = JSON.parse(loadJSON("data/data.json"));
+    userData = JSON.parse(loadJSON("/mangaTrackers/data/data.json"));
 
     for (var i = userData.users.length - 1; i >= 0; i--) {
 
